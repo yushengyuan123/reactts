@@ -1,0 +1,21 @@
+.bar-container {
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    background-color: red;
+    z-index: 100;
+    bottom: 0;
+    font-size: 0;
+
+}
+
+.bar-slide-container {
+    display: inline-block;
+    height: 100%;
+    line-height: 4rem;
+    background-color: yellow;
+    width: 50%;
+    vertical-align: top;
+    text-align: center;
+    font-size: 2rem;
+}

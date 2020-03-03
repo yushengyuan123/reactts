@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Login from './component/Login/Login'
+import Home from "./component/home/Home";
+// @ts-ignore
+import {HashRouter, Route, Switch} from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>worimioma</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <HashRouter>
+            <Switch>
+                    <Route exact path='/Login' component={Login}/>
+                    <Route exact path='/Home' component={Home}/>
+            </Switch>
+        </HashRouter>
+    );
 }
 
 export default App;
